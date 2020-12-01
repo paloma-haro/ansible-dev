@@ -1,0 +1,12 @@
+---
+- name: Playbook - Install an application
+  hosts: pete #a reference to a host or group or groups in inventory
+  gather_facts: yes   # default is yes
+
+  tasks:
+  - name: using apt to install figlet
+    apt:
+        name: figlet
+        state: present
+    become: yes
+
