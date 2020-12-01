@@ -8,5 +8,7 @@
      file:
        path: ~/output/
        state: directory
+
    - name: use shell module with wildcarding
      shell: echo $HOME >> ~/output/path.txt
+
